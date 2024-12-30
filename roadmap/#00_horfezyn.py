@@ -14,8 +14,8 @@ variable = None
 
 # Tipos de datos
 num = 100
-cadena = 'Cadena de caracteres'
-f_num = 100.50
+cadena = 'Esta es una cadena de texto'
+f_num = 101
 b_var = True
 b_var_2 = False
 sin_asignar_tipo = None
