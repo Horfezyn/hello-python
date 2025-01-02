@@ -12,7 +12,7 @@ my_list = [35, 24, 62, 52, 30, 30, 17]
 print(my_list)
 print(len(my_list))
 
-my_other_list = [35, 1.77, "Brais", "Moure"]
+my_other_list = [35, 1.77, "Jesús", "Hofezyn"]
 
 print(type(my_list))
 print(type(my_other_list))
@@ -42,7 +42,7 @@ print(my_list + my_other_list)
 
 # Creación, inserción, actualización y eliminación
 
-my_other_list.append("MoureDev")
+my_other_list.append("Horfezyn")
 print(my_other_list)
 
 my_other_list.insert(1, "Rojo")
