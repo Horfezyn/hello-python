@@ -1,11 +1,11 @@
 import math
 
-def seleccionar_calibre():
+def seleccionar_calibre(): #Aqui realizaremos todos los calculos necesarios para calcular el calibre, solo para 120V.
     """
     Programa para la selección de cableado eléctrico conforme a la NOM-001-SEDE-2022
     para circuitos monofásicos de 120V.
     """
-    # Datos de entrada
+    # Datos de entrada que necesitamos ingresar para hacer el calculo correcto.
     print("\n=== Selección de Cableado ===")
     potencia = float(input("Ingrese la potencia de la carga (W): "))
     factor_potencia = float(input("Ingrese el factor de potencia (0-1): "))
@@ -19,7 +19,7 @@ def seleccionar_calibre():
     print(f"\nCorriente nominal calculada: {corriente:.2f} A")
 
     # Paso 2: Selección inicial del calibre
-    tabla_capacidad_corriente = {
+    tabla_capacidad_corriente = { # Creamos un diccionario que contiene la ampacidad para 30grados 
         "14": 15,
         "12": 20,
         "10": 30,
@@ -30,7 +30,7 @@ def seleccionar_calibre():
     }  # Tabla simplificada (en amperios)
 
     calibre_inicial = None
-    for calibre, capacidad in tabla_capacidad_corriente.items():
+    for calibre, capacidad in tabla_capacidad_corriente.items(): #calibre toma cada valor del diccionario y capacidad el valor a la clave
         if corriente <= capacidad:
             calibre_inicial = calibre
             break
